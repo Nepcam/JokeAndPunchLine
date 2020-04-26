@@ -28,13 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.labelJoke = new System.Windows.Forms.Label();
+            this.buttonSetUp = new System.Windows.Forms.Button();
+            this.buttonPunchLine = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // labelJoke
+            // 
+            this.labelJoke.AutoSize = true;
+            this.labelJoke.Location = new System.Drawing.Point(346, 91);
+            this.labelJoke.Name = "labelJoke";
+            this.labelJoke.Size = new System.Drawing.Size(0, 13);
+            this.labelJoke.TabIndex = 0;
+            // 
+            // buttonSetUp
+            // 
+            this.buttonSetUp.Location = new System.Drawing.Point(146, 213);
+            this.buttonSetUp.Name = "buttonSetUp";
+            this.buttonSetUp.Size = new System.Drawing.Size(75, 23);
+            this.buttonSetUp.TabIndex = 1;
+            this.buttonSetUp.Text = "Set Up";
+            this.buttonSetUp.UseVisualStyleBackColor = true;
+            // 
+            // buttonPunchLine
+            // 
+            this.buttonPunchLine.Location = new System.Drawing.Point(548, 213);
+            this.buttonPunchLine.Name = "buttonPunchLine";
+            this.buttonPunchLine.Size = new System.Drawing.Size(75, 23);
+            this.buttonPunchLine.TabIndex = 2;
+            this.buttonPunchLine.Text = "Punch Line";
+            this.buttonPunchLine.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonPunchLine);
+            this.Controls.Add(this.buttonSetUp);
+            this.Controls.Add(this.labelJoke);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label labelJoke;
+        private System.Windows.Forms.Button buttonSetUp;
+        private System.Windows.Forms.Button buttonPunchLine;
     }
 }
 
