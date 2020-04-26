@@ -18,11 +18,26 @@ using System.Windows.Forms;
 
 namespace JokeAndPunchLine
 {
-    public partial class Form1 : Form
+    public partial class FormJoke : Form
     {
-        public Form1()
+        public FormJoke()
         {
             InitializeComponent();
+        }
+
+        private void FormJoke_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSetUp_Click(object sender, EventArgs e)
+        {
+            labelJoke.Text = "Why Java Programmers Wear Glasses?";
+        }
+
+        private void buttonPunchLine_Click(object sender, EventArgs e)
+        {
+            labelJoke.Text = "Because they can't C#!!";
         }
     }
 }

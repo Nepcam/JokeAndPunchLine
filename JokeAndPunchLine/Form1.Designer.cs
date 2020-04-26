@@ -1,6 +1,6 @@
 ﻿namespace JokeAndPunchLine
 {
-    partial class Form1
+    partial class FormJoke
     {
         /// <summary>
         /// Required designer variable.
@@ -49,6 +49,7 @@
             this.buttonSetUp.TabIndex = 1;
             this.buttonSetUp.Text = "Set Up";
             this.buttonSetUp.UseVisualStyleBackColor = true;
+            this.buttonSetUp.Click += new System.EventHandler(this.buttonSetUp_Click);
             // 
             // buttonPunchLine
             // 
@@ -58,8 +59,9 @@
             this.buttonPunchLine.TabIndex = 2;
             this.buttonPunchLine.Text = "Punch Line";
             this.buttonPunchLine.UseVisualStyleBackColor = true;
+            this.buttonPunchLine.Click += new System.EventHandler(this.buttonPunchLine_Click);
             // 
-            // Form1
+            // FormJoke
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -67,8 +69,10 @@
             this.Controls.Add(this.buttonPunchLine);
             this.Controls.Add(this.buttonSetUp);
             this.Controls.Add(this.labelJoke);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormJoke";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "JOKE";
+            this.Load += new System.EventHandler(this.FormJoke_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
